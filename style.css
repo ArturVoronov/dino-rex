@@ -1,0 +1,38 @@
+.game{
+    width: 1600px;
+    height: 800px;
+    border-bottom: 2px solid #000;
+    margin: auto;
+    background-image:url(img/1pust.jpg);
+}
+#dino{
+    width: 500px;
+    height: 400px;
+    background-image: url(img/s-l500.png);
+    box-sizing: 50px 50px;
+    position: relative;
+    top: 380px;
+}
+#cactys{
+    width: 160px;
+    height: 160px;
+    background-image: url(img/Кактус.png);
+    box-sizing: 160px 160px;
+    position: relative;
+    top:220px;
+    left: 1420px;
+    animation: cactusMov 2s infinite linear;
+}
+@keyframes cactusMov {
+    0% {left:1420px;}
+    100%{left:-20px}
+}
+.jump{
+    animation: jump 1s linear;}
+
+@keyframes jump{
+    0%{top:150px;}
+    30%{top:130px;}
+    50%{top:80px;}
+
+}
